@@ -5,11 +5,18 @@ body{
   flex-direction: column;
 }
 h1{
-  border: 1px solid black;
-  border-radius: 20%;
+  border: 3px solid black;
+  border-radius: 10px;
   display: flex;
   flex-direction: inline;
+  margin: 10px;
 
+}
+#idHeader{
+  height: 100px;
+  line-height: 250%;
+  text-align: center;
+  
 }
 .listaHeader{
   margin: 0;
@@ -18,4 +25,8 @@ h1{
 }
 .botoesDiv{
 
+}
+
+button{
+  height:;
 }
