@@ -31,7 +31,7 @@ export default function ListaViagem(){
 
         async function valida(){
             try{
-                const resposta = await axios.get(`http://localhost:3000/disciplinas`,config);
+                const resposta = await axios.get(`http://localhost:3000/viagens`,config);
                 console.log(resposta);
                 if(resposta.status === 200)
                     setValidado(true);
