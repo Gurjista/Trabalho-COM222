@@ -37,6 +37,37 @@ function App() {
           </ul>
         </nav>
 
+        <div class="viagens">
+          <section class = "viagem">
+            <ul id="listaViagem">
+                <li><label for=""> Local: Veneza, Itália</label>{}<></></li>
+                <li><label for=""> Data: Dezembro, 2024</label></li>
+                <li><label for=""> Duração: 1 Mês</label></li>
+                <li><label for=""> Preço: R$ 8,800</label></li>
+                <li><label for=""> Requisição de Visto: Não</label></li>
+            </ul>
+          </section>
+          <section class = "viagem">
+            <ul id="listaViagem">
+                <li><label for=""> Local: Toronto, Canadá</label>{}<></></li>
+                <li><label for=""> Data: Julho, 2024</label></li>
+                <li><label for=""> Duração: 2 Meses</label></li>
+                <li><label for=""> Preço: R$ 20,000</label></li>
+                <li><label for=""> Requisição de Visto: Sim</label></li>
+            </ul>
+          </section>
+          <section class = "viagem">
+            <ul id="listaViagem">
+                <li><label for=""> Local: Tokyo, Japão</label>{}<></></li>
+                <li><label for=""> Data: Janeiro, 2025</label></li>
+                <li><label for=""> Duração: 1 Mês</label></li>
+                <li><label for=""> Preço: R$ 15,000</label></li>
+                <li><label for=""> Requisição de Visto: Passaporte brasileiro.</label></li>
+            </ul>
+          </section>
+
+        </div>
+
         
 
         
