@@ -32,7 +32,7 @@ export default function Login(){
     }
 
     if(msg.toLowerCase().includes('autenticado')){
-        return <Navigate to = '/viagens' />
+        //return pra página de cadastrar e editar as viagens
     }
 
     return (
