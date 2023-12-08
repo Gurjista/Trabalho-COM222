@@ -2,6 +2,7 @@ import { useState } from 'react'
 import reactLogo from './assets/react.svg'
 import viteLogo from '/vite.svg'
 import './App.css'
+import { Link } from 'react-router-dom';
 
 function App() {
   const [count, setCount] = useState(0)
@@ -17,8 +18,8 @@ function App() {
           <p1 id = "idHeader">Agenciamento de Viagens</p1>
 
             <div class = "botoesDiv">
-              <button id = "btnLogin">Login</button>
-              <button id = "btnCriarConta">Criar Conta</button>
+              <button id = "btnLogin"><Link to="/login">Login</Link></button>
+              <button id = "btnCriarConta"><Link to="/criar-user">Criar Conta</Link></button>
             </div>
 
           </ul>
