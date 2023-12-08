@@ -2,36 +2,31 @@ import { useState } from 'react'
 import reactLogo from './assets/react.svg'
 import viteLogo from '/vite.svg'
 import './App.css'
-import { Link } from 'react-router-dom'
 
 function App() {
   const [count, setCount] = useState(0)
 
   return (
     <>
-      <body>
-        <main>
+    <body>
+      <main>
 
-          <h1>
-            <ul class="listaHeader">
+        <h1>
+          <ul class = "listaHeader">
+            
+          <p1 id = "idHeader">Agenciamento de Viagens</p1>
 
-              <p1 id="idHeader">Agenciamento de Viagens</p1>
+            <div class = "botoesDiv">
+              <button id = "btnLogin">Login</button>
+              <button id = "btnCriarConta">Criar Conta</button>
+            </div>
 
-              <div class="botoesDiv">
-                <Link to="/login">
-                  <button id="btnLogin">Login</button>
-                </Link>
-                <Link to="/criar-user">
-                  <button id="btnCriarConta">Criar Conta</button>
-                </Link>
-              </div>
-
-            </ul>
-
-
-          </h1>
-
-          <nav class="ofertas">
+          </ul>
+          
+          
+        </h1>
+        
+        <nav class="ofertas">
             <ul class="menu">
               <li><a href="#">Home</a></li>
               <li><a href="#">Sobre</a></li>
@@ -39,27 +34,27 @@ function App() {
               </li>
               <li><a href="#">Links</a></li>
               <li><a href="#">Fale Conosco</a></li>
-            </ul>
-          </nav>
+          </ul>
+        </nav>
 
+        
 
+        
+      </main>
+    
+ 
+    </body>
 
-
-        </main>
-
-
-      </body>
-
-      <footer>
-        <p> Feito por: </p>
-        <ul class="listaFooter">
+    <footer>
+      <p> Feito por: </p>
+        <ul class = "listaFooter">
           <li><a href="https://www.instagram.com/ygabrielvaz/">Gabriel</a></li>
           <li><a href="https://linktr.ee/guilhermewicked">Guilherme</a></li>
           <li><a href="https://www.instagram.com/gustavo_p_rocha/">Gustavo</a></li>
         </ul>
 
-      </footer>
-
+    </footer>
+    
       {/* <div>
         <a href="https://vitejs.dev" target="_blank">
           <img src={viteLogo} className="logo" alt="Vite logo" />
