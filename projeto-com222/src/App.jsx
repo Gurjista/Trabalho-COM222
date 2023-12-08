@@ -13,7 +13,8 @@ function App() {
 
         <h1>
           <ul class = "listaHeader">
-          <p1>Agenciamento de Viagens</p1>
+            
+          <p1 id = "idHeader">Agenciamento de Viagens</p1>
 
             <div class = "botoesDiv">
               <button id = "btnLogin">Login</button>
@@ -25,18 +26,34 @@ function App() {
           
         </h1>
         
-        <nav class = "ofertas">
-          
+        <nav class="ofertas">
+            <ul class="menu">
+              <li><a href="#">Home</a></li>
+              <li><a href="#">Sobre</a></li>
+              <li><a href="#">O que fazemos?</a>
+              </li>
+              <li><a href="#">Links</a></li>
+              <li><a href="#">Fale Conosco</a></li>
+          </ul>
         </nav>
 
+        
+
+        
       </main>
     
-    <footer>
-      <p>
-        Feito por:
-      </p>
-    </footer>
+ 
     </body>
+
+    <footer>
+      <p> Feito por: </p>
+        <ul class = "listaFooter">
+          <li><a href="https://www.instagram.com/ygabrielvaz/">Gabriel</a></li>
+          <li><a href="https://linktr.ee/guilhermewicked">Guilherme</a></li>
+          <li><a href="https://www.instagram.com/gustavo_p_rocha/">Gustavo</a></li>
+        </ul>
+
+    </footer>
     
       {/* <div>
         <a href="https://vitejs.dev" target="_blank">
