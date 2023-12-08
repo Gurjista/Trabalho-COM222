@@ -5,7 +5,7 @@ import { Link, Navigate } from 'react-router-dom';
 
 export default function CreateUser() {
 
-    const [msg, setMsg] = useSate();
+    const [msg, setMsg] = useState();
     const [userCriado, setUserCriado] = useState(false);
     const form = useForm();
 
