@@ -15,3 +15,13 @@ app.use(cors());
 app.listen(3000, () => {
     console.log('Servidor na porta 3000');
 });
+
+const User = require('./model/User');
+
+app.post('/login', async (req,res) => {
+    const {email, password} = req.body;
+
+    const jsonPath = path.join(__dirname, '.', 'db','banco-dados-usuario.json');
+    const usuariosCadastrados = JSON.parse(fs.readFileSync(jsonPath, {enconding : 'utf8', flag: 'r'}));
+    
+})
