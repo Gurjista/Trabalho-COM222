@@ -18,18 +18,39 @@ body{
   width: fit-content;
 }
 
+.viagem{
+  border: solid black;
+  border-radius: 10px;
+}
+
+#listaViagem{
+  list-style-type: none;
+}
+
+#viagens{
+  border:solid black;
+  border-radius: 10px;
+}
+
 footer{
   bottom: 0;
   position: fixed;
-  display : flex;
+  display: flex;
+  background-color:;
   flex-direction: row;
   justify-content: space-evenly;
+  color: white; /* Adjust text color as needed */
 }
 
 .listaFooter{
-  display:flex;
+  list-style: none;
+  display: flex;
   flex-direction: row;
   justify-content: space-evenly;
+}
+.listaFooter li {
+  margin: 0 10px;
+  padding: 0;
 }
 
 .menu{
