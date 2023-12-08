@@ -8,6 +8,36 @@ function App() {
 
   return (
     <>
+    <body>
+      <main>
+
+        <h1>
+          <ul class = "listaHeader">
+          <p1>Agenciamento de Viagens</p1>
+
+            <div class = "botoesDiv">
+              <button id = "btnLogin">Login</button>
+              <button id = "btnCriarConta">Criar Conta</button>
+            </div>
+
+          </ul>
+          
+          
+        </h1>
+        
+        <nav class = "ofertas">
+          
+        </nav>
+
+      </main>
+    
+    <footer>
+      <p>
+        Feito por:
+      </p>
+    </footer>
+    </body>
+    
       {/* <div>
         <a href="https://vitejs.dev" target="_blank">
           <img src={viteLogo} className="logo" alt="Vite logo" />
