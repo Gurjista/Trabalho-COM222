@@ -5,8 +5,6 @@ body{
   flex-direction: column;
 }
 
-
-
 .listaHeader{
   margin: 0;
   display: flex;
@@ -39,7 +37,7 @@ footer{
   background-color:;
   flex-direction: row;
   justify-content: space-evenly;
-  color: white; /* Adjust text color as needed */
+  color: white;
 }
 
 .listaFooter{

@@ -2,6 +2,7 @@ import { useState } from 'react'
 import reactLogo from './assets/react.svg'
 import viteLogo from '/vite.svg'
 import './App.css'
+import { Link } from 'react-router-dom';
 
 function App() {
   const [count, setCount] = useState(0)
@@ -17,8 +18,8 @@ function App() {
           <p1 id = "idHeader">Agenciamento de Viagens</p1>
 
             <div class = "botoesDiv">
-              <button id = "btnLogin">Login</button>
-              <button id = "btnCriarConta">Criar Conta</button>
+              <button id = "btnLogin"><Link to="/login">Login</Link></button>
+              <button id = "btnCriarConta"><Link to="/criar-user">Criar Conta</Link></button>
             </div>
 
           </ul>
@@ -36,6 +37,9 @@ function App() {
               <li><a href="#">Fale Conosco</a></li>
           </ul>
         </nav>
+      
+        {/* Esta seção é referente ao que seria a exibição dos planos 
+        presentes no banco de dados */}
 
         <div class="viagens">
           <section class = "viagem">
@@ -45,6 +49,7 @@ function App() {
                 <li><label for=""> Duração: 1 Mês</label></li>
                 <li><label for=""> Preço: R$ 8,800</label></li>
                 <li><label for=""> Requisição de Visto: Não</label></li>
+                <a>Preencher Formulário</a>
             </ul>
           </section>
           <section class = "viagem">
@@ -54,6 +59,7 @@ function App() {
                 <li><label for=""> Duração: 2 Meses</label></li>
                 <li><label for=""> Preço: R$ 20,000</label></li>
                 <li><label for=""> Requisição de Visto: Sim</label></li>
+                <a>Preencher Formulário</a>
             </ul>
           </section>
           <section class = "viagem">
@@ -63,12 +69,11 @@ function App() {
                 <li><label for=""> Duração: 1 Mês</label></li>
                 <li><label for=""> Preço: R$ 15,000</label></li>
                 <li><label for=""> Requisição de Visto: Passaporte brasileiro.</label></li>
+                <a>Preencher Formulário</a>
             </ul>
           </section>
 
         </div>
-
-        
 
         
       </main>
