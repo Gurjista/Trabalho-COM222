@@ -90,6 +90,21 @@ app.get('/viagens', verificaToken, (req,res) => {
     return res.json(viagens);
 })
 
+app.get('/viagens/:local', verificaToken, (req,res) => {
+    const jsonPath = path.join(__dirname, '.', 'db', 'viagens.json');
+    const viagens = JSON.parse(fs.readFileSync(jsonPath, { encoding: 'utf8', flag: 'r' }));
+
+    const params = req.params;
+
+    for(let viagem of viagens){
+        if(params.local.toLowerCase() === viagem.local){
+            return res.json(viagem);
+        }
+    }
+    return res.status(403).send(`Local de Viagem não encontrado`);
+    
+})
+
 function verificaToken(req,res,next){
 
     const authHeaders = req.headers['authorization'];

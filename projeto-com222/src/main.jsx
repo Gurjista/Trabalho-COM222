@@ -25,6 +25,10 @@ const router = createBrowserRouter([
 {
   path: 'viagens',
   element: <ListaViagem />
+},
+{
+  path: 'viagens/:local',
+  element: <ListaViagem />
 }
 ]);
 
