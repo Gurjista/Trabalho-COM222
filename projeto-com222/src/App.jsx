@@ -37,6 +37,9 @@ function App() {
               <li><a href="#">Fale Conosco</a></li>
           </ul>
         </nav>
+      
+        {/* Esta seção é referente ao que seria a exibição dos planos 
+        presentes no banco de dados */}
 
         <div class="viagens">
           <section class = "viagem">
@@ -71,8 +74,6 @@ function App() {
           </section>
 
         </div>
-
-        
 
         
       </main>
